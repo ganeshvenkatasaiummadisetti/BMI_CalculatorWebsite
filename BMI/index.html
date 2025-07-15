@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf"></script>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>BMI Calculator</h1>
+    <p>Find out if you're in a healthy weight range and get tailored advice.</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/3208/3208728.png" alt="BMI Icon" class="hero-img">
+    <a href="#calculator" class="start-btn">Start Now</a>
+  </section>
+
+  <!-- Facts Section -->
+  <section class="facts">
+    <h2>💡 Did You Know?</h2>
+    <div class="card-container">
+      <div class="fact-card">Body Mass Index helps screen for weight-related health issues.</div>
+      <div class="fact-card">BMI = Weight (kg) / Height² (m²)</div>
+      <div class="fact-card">A BMI between 18.5–24.9 is considered normal.</div>
+      <div class="fact-card">Both underweight and obesity can affect health.</div>
+      <div class="fact-card">❗for calculation 1 feet = 30cms and 1 inch =2.5cms </div>
+    </div>
+  </section>
+
+  <!-- BMI Calculator Section -->
+  <section id="calculator" class="calculator-section">
+    <h2>Calculate Your BMI</h2>
+
+    <div class="form-group">
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" placeholder="e.g., 170" />
+    </div>
+
+    <div class="form-group">
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" placeholder="e.g., 65" />
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" placeholder="e.g., 25" />
+    </div>
+
+    <button onclick="calculateBMI()">Calculate</button>
+    <button id="exportBtn" style="display:none" onclick="exportPdf()"></button>
+
+    <div id="result"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
