@@ -42,6 +42,7 @@ BMI/
 ## 📜 License
 
 This project is open-source under the [MIT License](LICENSE).
+Developed by Ummadisetti Ganesh Venkata Sai
 
 
 ## 🙌 Acknowledgments
